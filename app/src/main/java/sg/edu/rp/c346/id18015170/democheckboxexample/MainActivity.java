@@ -3,6 +3,7 @@ package sg.edu.rp.c346.id18015170.democheckboxexample;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         btnCheck.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.i("MyActivity", "Inside OnClick()");
                 Toast.makeText(MainActivity.this, "Button Click", Toast.LENGTH_LONG).show();
                 if(cbEnabled.isChecked()) {
                     double pay = calcPay(100, 20);
